@@ -1,24 +1,56 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-
-    printf("super trunfo");
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main(){
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    int pontosTurist;
+    float pib,area, populacao;     
+    char nome[30],nome2[30],codigo[30];
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+
+    printf("       *** Bem vindo ao Desafio Super trunfo ***\n");
+    printf("\n");
+    printf("Por favor digite seu nome para que possamos dar seguimento: ");
+    scanf ("%s",&nome);
+    printf("\n");
+    printf("\n");
+    printf("              Bem vindo Sr. %s\n",nome);
+    printf("\n");
+    printf("\n");   
+    
+    printf("Muito bem, agora vamos dar seguimento abaixo!!!\n");
+
+    printf("\n");
+
+    printf("Digite o codigo da carta! : ");
+    scanf("%29s",&codigo,"\n");
+
+    printf("Digite a populacao : ");
+    scanf("%f",&populacao,"\n");
+
+    printf("Digite a area : ");
+    scanf("%f",&area,"\n");
+
+    printf("Digite o PIB : ");
+    scanf("%f",&pib,"\n");
+
+    printf("Numero de pontos turisticos aprox.: ");
+    scanf("%d",&pontosTurist,"\n");
+     
+    printf("\n");
+    printf("\n"); 
+    
+    printf("           Sua carta selecionada e:%5s\n",codigo,"\n");
+    printf("           Populacao:%.1f\n",populacao,"\n");
+    printf("           Area:%.2f\n",area,"\n");
+    printf("           PIB:%.1f\n",pib,"\n");
+    printf("           Pontos turisticos:%d\n",pontosTurist,"\n");
+    
+    printf("\n");
+    printf("\n");
+    printf("Fim de jogo!");
+    printf("\n");
+
+return 0;
 }
